@@ -12,7 +12,46 @@ namespace Open_Lab_10._00
         private int pages;
         private string category;
         private string author;
-        private string releaseDate;
+        private int releaseDate;
+
+        public string Title
+        {
+            get { return title; }
+            set { title = value; }
+        }
+
+        public int Pages
+        {
+            get { return pages; }
+            set 
+            {
+                if (value < 0)
+                {
+                    pages = 1;
+                }
+            }
+        }
+
+        public string Category
+        {
+            get { return category; }
+            set { category = value; }
+        }
+
+        public int ReleaseDate
+        {
+            get { return releaseDate; }
+            set 
+            {
+                if(value >= 1450 && value <= 2021)
+                {
+                    releaseDate = value;
+                } else
+                {
+                    releaseDate = -1;
+                }
+            }
+        }
 
         public void title_write(string title)
         {
@@ -34,7 +73,7 @@ namespace Open_Lab_10._00
             this.author = author;
         }
 
-        public void releaseDate_write(string releaseDate)
+        public void releaseDate_write(int releaseDate)
         {
             this.releaseDate = releaseDate;
         }
