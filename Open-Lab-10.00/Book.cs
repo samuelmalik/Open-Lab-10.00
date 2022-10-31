@@ -14,12 +14,39 @@ namespace Open_Lab_10._00
         private string author;
         private int releaseDate;
 
+        public Book()
+        {
+            title = "-1";
+            pages = -1;
+            category = "-1";
+            author = "-1";
+            releaseDate = -1;
+        }
+
+        public Book(string title, int pages)
+        {
+            this.title = title;
+            this.pages = pages;
+            category = "-1";
+            author = "-1";
+            releaseDate = -1;
+        }
+
+        public Book(string title, int pages, string category, string author, int releaseDate)
+        {
+            this.title = title;
+            this.pages = pages;
+            this.category = category;
+            this.author = author;
+            this.releaseDate = releaseDate;          
+        }
+
+
         public string Title
         {
             get { return title; }
             set { title = value; }
         }
-
         public int Pages
         {
             get { return pages; }
@@ -31,20 +58,16 @@ namespace Open_Lab_10._00
                 }
             }
         }
-
-
         public string Category
         {
             get { return category; }
             set { category = value; }
         }
-
         public string Author
         {
             get { return author; }
             set { author = value; }
         }
-
         public int ReleaseDate
         {
             get { return releaseDate; }
@@ -60,31 +83,28 @@ namespace Open_Lab_10._00
             }
         }
 
+
+
         public void title_write(string title)
         {
             this.title = title;
         }
-
         public void pages_write(int pages)
         {
             this.pages = pages;
         }
-
         public void category_write(string category)
         {
             this.category = category;
         }
-
         public void author_write(string author)
         {
             this.author = author;
         }
-
         public void releaseDate_write(int releaseDate)
         {
             this.releaseDate = releaseDate;
         }
-
         public void write_fields()
         {
             Console.WriteLine("Title: " + title);
