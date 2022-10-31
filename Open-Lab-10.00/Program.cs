@@ -32,6 +32,15 @@ namespace Open_Lab_10._00
             Console.WriteLine("Category: " + LOTR.Category);
             Console.WriteLine("Author: " + LOTR.Author);
             Console.WriteLine("Release date: " + LOTR.ReleaseDate);
+
+
+            Book LOTR2 = new Book();
+            Book LOTR3 = new Book("Lord of the rings 3", 1500);
+            Book HOBIT = new Book("The Hobbit", 232, "fantasy novel", "John Ronald Reuel Tolkien", 1937);
+
+            LOTR2.write_fields();
+            LOTR3.write_fields();
+            HOBIT.write_fields();
         }
     }
 }
