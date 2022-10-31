@@ -32,10 +32,17 @@ namespace Open_Lab_10._00
             }
         }
 
+
         public string Category
         {
             get { return category; }
             set { category = value; }
+        }
+
+        public string Author
+        {
+            get { return author; }
+            set { author = value; }
         }
 
         public int ReleaseDate
