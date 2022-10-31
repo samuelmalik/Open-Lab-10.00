@@ -45,7 +45,7 @@ namespace Open_Lab_10._00
             Console.WriteLine("Pages: " + pages);
             Console.WriteLine("Category: " + category);
             Console.WriteLine("Author: " + author);
-            Console.WriteLine(releaseDate);
+            Console.WriteLine("Release date: " + releaseDate);
         }
     }
 }
