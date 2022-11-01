@@ -27,17 +27,20 @@ namespace Open_Lab_10._00
             LOTR.Author = "John Ronald Reuel Tolkien";
             LOTR.ReleaseDate = 1954;
 
-            Console.WriteLine("Title: " + LOTR.Title);
-            Console.WriteLine("Pages: " + LOTR.Pages);
-            Console.WriteLine("Category: " + LOTR.Category);
-            Console.WriteLine("Author: " + LOTR.Author);
-            Console.WriteLine("Release date: " + LOTR.ReleaseDate);
+            //Console.WriteLine("Title: " + LOTR.Title);
+            //Console.WriteLine("Pages: " + LOTR.Pages);
+            //Console.WriteLine("Category: " + LOTR.Category);
+            //Console.WriteLine("Author: " + LOTR.Author);
+            //Console.WriteLine("Release date: " + LOTR.ReleaseDate);
 
 
             Book LOTR2 = new Book();
             Book LOTR3 = new Book("Lord of the rings 3", 1500);
             Book HOBIT = new Book("The Hobbit", 232, "fantasy novel", "John Ronald Reuel Tolkien", 1937);
 
+            HOBIT.Category = Book.categoryList[4];
+
+            LOTR.write_fields();
             LOTR2.write_fields();
             LOTR3.write_fields();
             HOBIT.write_fields();
