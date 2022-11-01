@@ -14,6 +14,13 @@ namespace Open_Lab_10._00
         private string author;
         private int releaseDate;
 
+        
+
+        /// <summary>
+        /// This is a static class which belongs to class book, not to single objects.
+        /// </summary>
+        public static List<string> categoryList = new List<string>() {"detské", "romantické", "náučné", "sci-fi", "dobrodružné"};
+
         public Book()
         {
             title = "-1";
@@ -60,7 +67,6 @@ namespace Open_Lab_10._00
         }
         public string Category
         {
-            get { return category; }
             set { category = value; }
         }
         public string Author
