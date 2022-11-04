@@ -40,10 +40,15 @@ namespace Open_Lab_10._00
 
             HOBIT.Category = Book.categoryList[4];
 
-            LOTR.write_fields();
-            LOTR2.write_fields();
-            LOTR3.write_fields();
-            HOBIT.write_fields();
+            //LOTR.write_fields();
+            //LOTR2.write_fields();
+            //LOTR3.write_fields();
+            //HOBIT.write_fields();
+
+            Console.WriteLine(LOTR.ToString());
+            Console.WriteLine(LOTR2.ToString());
+            Console.WriteLine(LOTR3.ToString());
+            Console.WriteLine(HOBIT.ToString());
         }
     }
 }

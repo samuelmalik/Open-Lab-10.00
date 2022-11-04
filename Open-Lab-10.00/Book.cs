@@ -91,33 +91,41 @@ namespace Open_Lab_10._00
 
 
 
-        public void title_write(string title)
+        public override string ToString()
         {
-            this.title = title;
+            return String.Format($"{this.title}, number of pages: {this.pages}, category: {this.category}, written by: {this.author}, released in: {this.releaseDate}");
         }
-        public void pages_write(int pages)
-        {
-            this.pages = pages;
-        }
-        public void category_write(string category)
-        {
-            this.category = category;
-        }
-        public void author_write(string author)
-        {
-            this.author = author;
-        }
-        public void releaseDate_write(int releaseDate)
-        {
-            this.releaseDate = releaseDate;
-        }
-        public void write_fields()
-        {
-            Console.WriteLine("Title: " + title);
-            Console.WriteLine("Pages: " + pages);
-            Console.WriteLine("Category: " + category);
-            Console.WriteLine("Author: " + author);
-            Console.WriteLine("Release date: " + releaseDate);
-        }
+
+        //public void title_write(string title)
+        //{
+        //    this.title = title;
+        //}
+        //public void pages_write(int pages)
+        //{
+        //    this.pages = pages;
+        //}
+        //public void category_write(string category)
+        //{
+        //    this.category = category;
+        //}
+        //public void author_write(string author)
+        //{
+        //    this.author = author;
+        //}
+        //public void releaseDate_write(int releaseDate)
+        //{
+        //    this.releaseDate = releaseDate;
+        //}
+
+
+
+        //public void write_fields()
+        //{
+        //    Console.WriteLine("Title: " + title);
+        //    Console.WriteLine("Pages: " + pages);
+        //    Console.WriteLine("Category: " + category);
+        //    Console.WriteLine("Author: " + author);
+        //    Console.WriteLine("Release date: " + releaseDate);
+        //}
     }
 }
